@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '~> 2.7.1'
+ruby '~> 2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
@@ -26,6 +26,7 @@ gem 'sendgrid', '~> 1.2.4'
 gem 'sprockets', '~> 3.7.2'
 gem 'webpacker', '~> 5.1', '>= 5.1.1'
 gem 'yaaf', '~> 0.1'
+gem 'graphql'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -33,7 +34,6 @@ gem 'yaaf', '~> 0.1'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-
 group :development, :test do
   gem 'bullet', '~> 6.1'
   gem 'factory_bot_rails', '~> 5.1', '>= 5.1.1'
@@ -57,6 +57,7 @@ group :development do
   gem 'rubocop-rootstrap', '~> 1.1'
   gem 'spring', '~> 2.1'
   gem 'spring-watcher-listen', '~> 2.0.1'
+  gem 'graphiql-rails'
 end
 
 group :test do
@@ -72,3 +73,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+gem 'graphiql-rails', group: :development
